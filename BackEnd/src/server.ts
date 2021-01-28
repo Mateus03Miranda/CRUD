@@ -17,4 +17,6 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
         message: 'Internal Server Error',
     });
 });
-app.listen(3333);
+app.listen(3333,()=>{
+    console.log('Server Started!');
+});
